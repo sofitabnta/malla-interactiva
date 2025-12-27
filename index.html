@@ -1,1 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Malla Derecho UC (Interactiva)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Malla Derecho UC — Interactiva</h1>
+      <p class="sub">
+        Rosado: pendiente · Morado: aprobado · Gris: bloqueado por prerrequisitos
+      </p>
+    </div>
+
+    <div class="actions">
+      <button id="resetBtn" class="btn btn-ghost" type="button">Reiniciar</button>
+      <button id="exportBtn" class="btn" type="button">Exportar JSON</button>
+      <label class="importLabel btn btn-ghost">
+        Importar JSON
+        <input id="importInput" type="file" accept="application/json" hidden />
+      </label>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="grid" class="grid"></section>
+  </main>
+
+  <footer class="footer">
+    <small>
+      Tip: si un ramo está gris, revisa sus prerrequisitos. Puedes editar los prerrequisitos en <code>app.js</code>.
+    </small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
 
